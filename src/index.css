@@ -1,4 +1,6 @@
 body {
+  
+  background: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +9,329 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.Navbar {
+  height: 50px;
+  background-color: rgb(24, 27, 39);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  
+  
+}
+
+.Navbar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.Navbar > ul > li {
+  border-right: 1px solid #c5c5c5;
+  display: inline-block;
+}
+
+.Nav-link {
+  width: 25%;
+  color: rgb(242, 242, 242);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background: rgb(63, 94, 92);
+
+}
+
+.Nav-link:hover {
+  background: #ddd;
+  color: black;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;   
+ 
+}
+
+.hrCol {
+  width: 100%
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 24px #0fa,
+    0 0 30px #0fa,
+    0 0 42px #0fa,
+    0 0 60px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.section2 {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+img {
+  height: 300px;
+  width: 220px;
+  pointer-events: none;
+}
+
+.Columns {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width:100%;
+    justify-content: center;
+}
+
+.leftCol .rightCol {
+  width: 10%;
+  height: 100%;
+}
+
+.midCol {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid white;
+  background: rgba(90, 90, 92, 0.4);
+}
+
+.neonText1 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px #0fa,
+      0 0 30px #0fa,
+      0 0 42px #0fa,
+      0 0 60px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+.neonText2 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px rgb(49, 91, 184),
+      0 0 30px rgb(49, 91, 184),
+      0 0 42px rgb(49, 91, 184),
+      0 0 60px rgb(49, 91, 184),
+      0 0 82px rgb(49, 91, 184),
+      0 0 92px rgb(49, 91, 184),
+      0 0 102px rgb(49, 91, 184),
+      0 0 151px rgb(49, 91, 184);
+}
+
+.neonText3 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px rgb(190, 37, 32),
+      0 0 30px rgb(190, 37, 32),
+      0 0 42px rgb(190, 37, 32),
+      0 0 60px rgb(190, 37, 32),
+      0 0 82px rgb(190, 37, 32),
+      0 0 92px rgb(190, 37, 32),
+      0 0 102px rgb(190, 37, 32),
+      0 0 151px rgb(190, 37, 32);
+}
+
+
+.footer {
+  height: 50px;
+  margin-top: -50px;
+  background: black;
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.hilite {
+  font-family: Verdana; 
+  font-size: 30px;
+  background-color: blueviolet;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  text-align: center;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.output {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+td > img {
+  width: auto;
+  height: 200px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  width: 100%
+}
+
+td, li, .text1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.list1 {
+  width: 80%;
+}
+
+.buttonfx {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.rainbow {
+
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 350% 350%;
+  -webkit-animation: rainbow 7s ease infinite;
+  -z-animation: rainbow 7s ease infinite;
+  -o-animation: rainbow 7s ease infinite;
+  animation: rainbow 7s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+.pageName {padding-top: 50px;}
+
+.helloContainer {
+  text-align: center;
+}
+
+.actors {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.actorData {
+  background-color: grey;
+  color:rgb(72, 96, 146);
+  font-size: 30px;
+  
+}
+
+Col {
+  background: #e3e81d;
 }
